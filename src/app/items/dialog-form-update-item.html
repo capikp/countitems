@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="submit(form)">
+    <h1 mat-dialog-title>Update item</h1>
+    <mat-dialog-content>
+      <mat-form-field>
+        <input matInput formControlName="_id" placeholder="">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="count" placeholder="Number">
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-button type="button" mat-dialog-close>Cancel</button>
+      <button mat-button type="submit">Add</button>
+    </mat-dialog-actions>
+  </form>
