@@ -31,7 +31,7 @@ import { SnackBarStatusNetworkOfflineComponent } from './app.component';
     ItemsModule,
     MaterialModule,
     AppRoutingModule,
-    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   entryComponents: [
     SnackBarStatusNetworkOfflineComponent
